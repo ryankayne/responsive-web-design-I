@@ -77,7 +77,7 @@ header {
 	justify-content: center;
 }
 a {
-	display: flex;
+	
 	padding: 10px 30px;
 	text-decoration: none;
 	color: gray;
@@ -510,8 +510,8 @@ footer {
 
     .middle-img {
         display: flex;
-        width: 95%;
-        height: auto 0;
+        width: 100%;
+        height: auto;
     }
 
     .bottom-section {
@@ -565,16 +565,26 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     .nav {
         display: flex;
         flex-direction: column;
+        width: 500px;
+        padding-top: 0;
+        margin-right: 0;
+    }
+
+    .nav:nth-child(1) {
+        border-top: 1px solid grey;
     }
 
     a {
         border-bottom: 1px solid grey;
-        width: 100%;
+    
+        text-align: center;
+        display: block;
     }
 
     .top-section {
@@ -618,6 +628,7 @@ footer {
         width: auto;
         height: auto;
         margin-bottom: 30px;
+        
     }
     
     .product {
@@ -635,7 +646,7 @@ footer {
         flex-direction: column;
         width: auto;
         height: auto;
-        margin-bottom: 30px;
+        margin-bottom: 0;
     }
 
 }
