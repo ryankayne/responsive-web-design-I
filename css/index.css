@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	width: 900px;
+	width: 95%;
 	margin: 0 auto;
 }
 
@@ -101,7 +101,7 @@ a {
 	margin-top: 50px;
 }
 
-nav {
+.nav {
 	
 	text-decoration: none;
 	display: flex;
@@ -168,10 +168,15 @@ h1 {
 	width: 49%;
 }
 
+.mid-img-adjust {
+    display: flex;
+    justify-content: center;
+}
+
 .middle-img {
 	display: flex;
-	width: 900px;
-	height: 180px;
+	width: 95%;
+	height: auto 0;
 }
 
 .bottom-section {
@@ -451,12 +456,73 @@ footer {
 
 @media (max-width: 800px) {
     body {
+        width: 95%;
+    }
+    
+    .top-image {
+        display: none;
+    }
 
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        width: 98%;
+        padding: 10px 0px;
+        margin-right: 50px;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: 1px solid black;
+        padding: 40px 0px;
+        margin-top: 10px;
+    }
+
+    .middle-img {
+        display: flex;
+        width: 95%;
+        height: auto 0;
+    }
+
+    footer {
+        text-align: center;
+        padding: 0px 0px 20px 0px;
     }
 }
 
 @media (max-width: 500px) {
     body {
-        
+        width: 95%;
     }
+
+    .logo {
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        border-bottom: 1px solid grey;
+        width: 100%;
+    }
+
 }
