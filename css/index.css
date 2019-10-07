@@ -34,7 +34,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: ;
+	list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -149,7 +149,6 @@ h1 {
 	display: flex;
 	justify-content: center;
 	padding: 30px 0px 10px 0px;
-	
 }
 
 .features {
@@ -470,7 +469,7 @@ footer {
         align-items: center;
     }
 
-    nav {
+    .nav {
         text-decoration: none;
         display: flex;
         justify-content: space-between;
@@ -487,10 +486,63 @@ footer {
         margin-top: 10px;
     }
 
+    .top-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0px 10px 0px;
+    }
+
+    .features {
+	
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+        width: 49%;
+    }
+    
+    .about {
+        
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+        width: 49%;
+    }
+
     .middle-img {
         display: flex;
         width: 95%;
         height: auto 0;
+    }
+
+    .bottom-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0px 30px 0px;
+        border-bottom: 1px solid black;
+    }
+
+    .services {
+	
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 33%;
+    }
+    
+    .product {
+        
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 33%;
+    }
+    
+    .vision {
+        
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 33%;
     }
 
     footer {
@@ -523,6 +575,67 @@ footer {
     a {
         border-bottom: 1px solid grey;
         width: 100%;
+    }
+
+    .top-section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .features {
+	
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .about {
+        
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .bottom-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px 0px 30px 0px;
+        border-bottom: 1px solid black;
+    }
+
+    .services {
+	
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .product {
+        
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .vision {
+        
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
     }
 
 }
